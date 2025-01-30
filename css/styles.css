@@ -342,3 +342,85 @@ footer {
 .tooltip[data-tooltip="#thrust4"]::after {
     content: "Thrust 4 - Dynamic 'Map your neighborhood': integrate the results of Thrusts 1-3 and use them to co-design and pilot-test applications with two communities.";
 }
+
+/* History Timeline styles */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    position: relative;
+}
+
+.timeline-event {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #ddd;
+    z-index: -1;
+}
+
+.timeline-event:first-child::before {
+    top: 50%;
+}
+
+.timeline-event:last-child::before {
+    bottom: 50%;
+}
+
+.event-time {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    *text-align: center;
+    background-color: #dedbdb;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: larger;
+    /*margin-right: 10px;*/
+}
+
+.timeline-event:last-child .event-time::after {
+    display: none; /* Hide arrow for the last event */
+}
+
+.event-box {
+    width: 1000px; /* Set a fixed width for event-box */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: relative;
+    /*z-index: 1;*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #000; /* Adjust color as needed */
+    margin: 0 auto;
+}
+
+.timeline-event a {
+    display: contents; /* Ensure links are displayed contents */
+    text-decoration-line: overline; /* Underline the links */
+    color: #007BFF; /* Change the color */
+
+}
