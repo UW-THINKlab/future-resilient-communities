@@ -1,290 +1,173 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Future resilient communities research project website.">
-    <title>Future Resilient Communities</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="utf-8" />
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+    <link as="style"
+        href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700"
+        onload="this.rel='stylesheet'" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>Future Resilient Communities - Home</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 </head>
 
-<body>
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <p class="scrolling-text">Welcome to Future Resilient Communities - NSF S&CC Research Project Website!</p>
-        <nav>
-            <ul>
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#history">History</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
+<body class="bg-[#fcfcf8] text-[#1c1c0d]" style='font-family: "Spline Sans", "Noto Sans", sans-serif;'>
+    <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+        <header class="sticky top-0 z-10 w-full bg-[#e8f0ec] backdrop-blur-md">
+            <div class="container mx-auto flex items-center justify-between px-4 sm:px-6 lg:px-8 py-4">
+                <a class="flex items-center gap-3" href="index.html">
+                    <svg class="h-8 w-8 text-[#166534]" fill="none" viewBox="0 0 48 48"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M24 4C25.7818 14.2173 33.7827 22.2182 44 24C33.7827 25.7818 25.7818 33.7827 24 44C22.2182 33.7827 14.2173 25.7818 4 24C14.2173 22.2182 22.2182 14.2173 24 4Z"
+                            fill="currentColor"></path>
+                    </svg>
+                    <h2 class="text-xl font-bold tracking-tight">Future Resilient Communities</h2>
+                </a>
+                <nav class="hidden md:flex items-center gap-8">
+                    <a class="text-sm font-bold text-[#166534] transition-colors" href="index.html">Home</a>
+                    <a class="text-sm font-medium hover:text-[#166534] transition-colors" href="about.html">About</a>
+                    <a class="text-sm font-medium hover:text-[#166534] transition-colors"
+                        href="history.html">History</a>
+                    <a class="text-sm font-medium hover:text-[#166534] transition-colors" href="team.html">Team</a>
+                    <a class="text-sm font-medium hover:text-[#166534] transition-colors"
+                        href="resources.html">Resources</a>
+                    <a class="text-sm font-medium hover:text-[#166534] transition-colors"
+                        href="gallery.html">Gallery</a>
+                    <a class="text-sm font-medium hover:text-[#166534] transition-colors"
+                        href="contact.html">Contact</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button class="md:hidden p-2">
+                        <span class="material-symbols-outlined">menu</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <main class="flex-grow">
+            <section
+                class="relative flex min-h-[60vh] md:min-h-[80vh] items-center justify-center bg-cover bg-center text-white"
+                style='background-image: linear-gradient(rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.6) 100%), url("images/hero_image.png");'>
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <div class="max-w-3xl mx-auto">
+                        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight tracking-tighter mb-4">Building
+                            Stronger Smart & Connected Communities Together</h1>
+                        <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+                            Our NSF S&CC research explores community resilience in the face of disasters, aiming to
+                            empower communities to prepare, respond, and recover effectively.
+                        </p>
+                        <a class="inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#16a34a] text-white text-base font-bold tracking-wide hover:bg-green-600 transition-colors shadow-lg"
+                            href="#overview">
+                            <span class="truncate">Learn More</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="py-20 md:py-32" id="overview">
+                <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <h2 class="text-3xl md:text-4xl font-bold tracking-tight mb-6">Project Overview</h2>
+                        <p class="text-lg text-gray-600 mb-12">
+                            The Future Resilient Communities Research Project is a multi-disciplinary research project
+                            funded by the National Science Foundation (NSF) Smart and Connected Communities (S&CC)
+                            program. The project aims to develop a novel framework for enhancing the resilience of
+                            communities to natural and human-made disasters through the integration of advanced
+                            communication technologies, data analytics, and community engagement.
+                        </p>
+                        <img src="images/SCC.png" alt="SCC"
+                            class="mx-auto mb-8 rounded-xl shadow-lg max-w-full h-auto" />
+                    </div>
 
-    <!-- Header Section -->
-    <header id="header">
-        <img src="images/future_community.png" alt="Header Image" style="width:90%; height:90%;"> <!-- Replace with your image path -->
-    </header>
+                    <!-- Thrusts Section (wider container) -->
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                            <div id="thrust1" class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Thrust 1 - Robust communications
+                                    solutions</h3>
+                                <p class="text-gray-700">Develop robust off-grid community-based communication networks
+                                    that can function during internet failure.</p>
+                                <p class="text-gray-700 mt-2"><b>Answer questions</b>: How can we design community
+                                    communications infrastructure to be robust to disasters? How can we best build
+                                    computing services that leverage community-held infrastructure during a disaster?
+                                </p>
+                            </div>
+                            <div id="thrust2" class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Thrust 2 - Building community social
+                                    networks</h3>
+                                <p class="text-gray-700">Conduct random sample surveys to collect information about
+                                    people's sharing behavior and their social ties within a community, and develop
+                                    novel models that infer social ties for the entire community to generate an initial
+                                    social network snapshot.</p>
+                                <p class="text-gray-700 mt-2"><b>Answer questions</b>: Can we obtain information on
+                                    community-based social networks without actually collecting detailed social tie
+                                    data? If yes, how?</p>
+                            </div>
+                            <div id="thrust3" class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Thrust 3 - Design for
+                                    information-resource sharing</h3>
+                                <p class="text-gray-700">Understand how social network structures affect
+                                    information-resource sharing, and formulate strategies that lead to efficient
+                                    information-resource sharing.</p>
+                                <p class="text-gray-700 mt-2"><b>Answer questions</b>: How to disseminate information
+                                    efficiently during a disaster?</p>
+                            </div>
+                            <div id="thrust4" class="rounded-xl border border-gray-200 bg-white p-6 shadow-sm">
+                                <h3 class="text-lg font-bold text-gray-900 mb-2">Thrust 4 - Dynamic "Map your
+                                    neighborhood"</h3>
+                                <p class="text-gray-700">Integrate the results of Thrusts 1 - 3 and use them to
+                                    co-design and pilot-test applications with two communities.</p>
+                                <p class="text-gray-700 mt-2"><b>Answer questions</b>: How does the proposed dynamic
+                                    map-your-neighborhood program better support robust communication and efficient
+                                    information-resource sharing during a disaster?</p>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <a class="inline-flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-[#166534] text-white text-base font-bold tracking-wide hover:bg-green-700 transition-colors"
+                                href="about.html">
+                                <span class="truncate">Explore Our Research</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer class="bg-[#e8f0ec] border-t border-gray-300">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <!-- Main footer content -->
+            <div class="flex flex-col lg:flex-row items-start justify-between gap-8 mb-8">
+                <!-- Left side: Project info with icon -->
+                <div class="flex flex-col gap-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 bg-[#166534] rounded-full flex items-center justify-center text-white">
+                            <span class="material-symbols-outlined">webhook</span>
+                        </div>
+                        <h2 class="text-xl font-bold tracking-tight text-gray-800">Future Resilient Communities</h2>
+                    </div>
+                    <p class="text-gray-500 text-sm max-w-md">A NSF-funded university research project on community
+                        resilience to natural and human-made disasters.</p>
+                </div>
 
-    <!-- About Section -->
-    <section id="about">
-        <h2>About</h2>
-        <p>Welcome to our <strong>Future Resilient Communities</strong> research project website!</p>
-        <div class="project-overview-container">
-            <div class="project-box project-description">
-                <h3>Project Overview</h3>
-                <p>The Future Resilient Communities Research Project is a multi-disciplinary research project 
-                    funded by the National Science Foundation (NSF) Smart and Connected Communities (S&CC) program. 
-                    The project aims to develop a novel framework for enhancing the resilience of communities to 
-                    natural and human-made disasters through the integration of advanced communication technologies, 
-                    data analytics, and community engagement.</p>
+                <!-- Right side: Sponsors -->
+                <div class="flex flex-col items-center lg:items-end">
+                    <p class="text-sm font-medium text-gray-500 mb-4">Sponsored by</p>
+                    <div class="flex flex-wrap items-center justify-center lg:justify-end gap-x-8 gap-y-4">
+                        <img alt="NSF Logo" class="h-16 sm:h-20 object-contain" src="images/NSF.png" />
+                        <img alt="University Logo" class="h-10 object-contain"
+                            src="images/Wordmark_stacked_Purple_Hex.png" />
+                        <img alt="Lab Logo" class="h-10 object-contain" src="images/THINK.png" />
+                    </div>
+                </div>
             </div>
-            <div class="project-box project-overview">
-                <img src="images/SCC.png" alt="scc Overview">
-            </div>
-        </div>
-    </section>
 
-    <!-- Team Section -->
-    <section id="team">
-        <h2>Research Team</h2>
-        <p>The project brings together a diverse team of researchers from the fields of civil and industrial engineering, computer science, 
-            and social sciences to address the complex challenges of building resilient communities in the face of increasing disaster risks. 
-            The research team is collaborating with local communities to co-develop and implement innovative solutions that 
-            leverage the latest advances in technology and data science to enhance community resilience.</p>
-        <p>This project foundationally integrates social, technical and community partners by engaging all of them in all 
-            phases of the work.The research project proposes 4 thrusts (
-            <span class="tooltip" data-tooltip="#thrust1">Thrust 1</span>, 
-            <span class="tooltip" data-tooltip="#thrust2">Thrust 2</span>, 
-            <span class="tooltip" data-tooltip="#thrust3">Thrust 3</span>, and 
-            <span class="tooltip" data-tooltip="#thrust4">Thrust 4</span>.) 
-            to answer various research questions, and each thrust will be led by 
-            one or two PI/Co-PI(s) on the team and will engage all team members.
-        </p>
-        <h3>    
-            Project Principal Investigator (PI) and Co-Investigators (Co-PI):
-        </h3>
-        <div class="people">
-            <div class="person">
-                <h3>
-                    <a href="https://www.ce.washington.edu/facultyfinder/cynthia-chen" target="_blank">
-                        Dr. Cynthia Chen
-                    </a>
-                </h3>
-                <p>Role: PI</p>
-                <p>Responsibilities: Dr. Chen a <strong>Professor</strong> in the <strong>Civil & Environmental Engineering</strong> 
-                    Department and the <strong>Industrial & Systems Engineering</strong> Department
-                    at the University of Washington. She is responsible for leading the entire 
-                    research team, overseeing all 4 thrusts (
-                        <span class="tooltip" data-tooltip="#thrust1">Thrust 1</span>, 
-                        <span class="tooltip" data-tooltip="#thrust2">Thrust 2</span>, 
-                        <span class="tooltip" data-tooltip="#thrust3">Thrust 3</span>, and 
-                        <span class="tooltip" data-tooltip="#thrust4">Thrust 4</span>.) 
-                        and community engagement, and making scientific, administrative, and budget-related decisions 
-                        (with the consultation of the team) to ensure that the project meets all expected goals.
-                </p>
-            </div>
-            <div class="person">
-                <h3>
-                    <a href="https://urbdp.be.uw.edu/people/dan-abramson" target="_blank">
-                        Dr. Daniel Abramson
-                    </a>
-                </h3>
-                <p>Role: Co-PI</p>
-                <p>Responsibilities: Dr. Abramson is an <strong>Associate Professor</strong> in the 
-                    Department of <strong>Urban Design and Planning</strong> at the University of Washington. He is 
-                    responsible for community engagement throughout the project as well as leading 
-                    <span class="tooltip" data-tooltip="#thrust4">Thrust 4</span>.
-                    As co-lead for Broadening Participation in the Cascadia CoPes Hazards Research Hub, 
-                    Dr. Abramson will facilitate Ocosta School student roles in the collaboration with Westport/South Beach.
-                </p>
-            </div>
-            <div class="person">
-                <h3>
-                    <a href="https://ise.washington.edu/facultyfinder/shuai-huang" target="_blank">
-                        Dr. Shuai Huang
-                    </a>
-                </h3>
-                <p>Role: Co-PI</p>
-                <p>Responsibilities: Dr. Huang is an <strong>Associate Professor</strong> in the Department of 
-                    <strong>Industrial & Systems Engineering</strong> at the University of Washington. He is responsible for 
-                    <span class="tooltip" data-tooltip="#thrust2">Thrust 2</span> and working with the team closely on 
-                    <span class="tooltip" data-tooltip="#thrust3">Thrust 3</span> and 
-                    <span class="tooltip" data-tooltip="#thrust4">Thrust 4</span>. 
-                    Dr. Huang will develop a special topic graduate course that focuses on 
-                    learning algorithms of social ties and operations optimization in the context of disaster relief. 
-                </p>
-            </div>
-            <div class="person">
-                <h3>
-                    <a href="https://www.engr.washington.edu/facresearch/newfaculty/2015/kurtis-heimerl" target="_blank">
-                    Dr. Kurtis Heimerl
-                    </a>
-                </h3>
-                <p>Role: Co-PI</p>
-                <p>Responsibilities: Dr. Heimerl is an <strong>Assistant Professor</strong> in the Department of 
-                    <strong>Computer Science & Engineering</strong> at the University of Washington. He is responsible for 
-                    <span class="tooltip" data-tooltip="#thrust1">Thrust 1</span> and working with the team 
-                    closely on <span class="tooltip" data-tooltip="#thrust4">Thrust 4</span>. 
-                    Dr. Heimerl will add a disaster relief module to his “CSE 580 Computing for Social Good”
-                    graduate research class. Dr. Heimerl's team have been using the SCN network to run and support 
-                    several educational initiatives, and will bring this educational 
-                    outreach material to new partner communities of Laurelhurst and Westport.
-                </p>
-            </div>
-            <div class="person">
-                <h3>
-                    <a href="https://soc.washington.edu/people/tyler-mccormick" target="_blank">
-                    Dr. Tyler McCormick
-                    </a>
-                </h3>
-                <p>Role: Co-PI</p>
-                <p>Responsibilities: Dr. McCormick is an <strong>Associate Professor</strong> of <strong>Statistics and 
-                    Sociology</strong> at the University of Washington. He is working closely with the team on advising 
-                    the team on the modified-ARD survey (<span class="tooltip" data-tooltip="#thrust2">Thrust 2</span>), 
-                    model development for information dissemination (<span class="tooltip" data-tooltip="#thrust3">Thrust 3</span>), 
-                    and designing strategies for information dissemination in <span class="tooltip" data-tooltip="#thrust4">Thrust 4</span>.
-                </p>
+            <!-- Bottom: Copyright -->
+            <div class="border-t border-gray-200 pt-6">
+                <p class="text-center text-sm text-gray-600">© 2025 NSF S&CC Community Resilience Research Project.
+                    All rights reserved.</p>
             </div>
         </div>
-        <!-- Thrusts Section -->
-        <div class="thrusts-container">
-            <div id="thrust1" class="thrust-box">
-                <h3>Thrust 1 - Robust communications solutions</h3>
-                <p>Develop robust off-grid community-based communication networks 
-                    that can function during internet failure.</p>
-                <p>Answer questions: How can we design community communications infrastructure to be robust to disasters? 
-                    How can we best build computing services that leverage community-held infrastructure during a disaster?</p>
-            </div>
-            <div id="thrust2" class="thrust-box">
-                <h3>Thrust 2 - Building community social networks</h3>
-                <p>Conduct random sample surveys to collect information about 
-                    people's sharing behavior and their social ties within a community, and develop novel models that 
-                    infer social ties for the entire community, to generates an initial social network snapshot for a community.</p>    
-                <p>Answer questions: Can we obtain information on community-based social networks without actually collecting 
-                    detailed social tie data? If yes, how to do it?</p></p>
-            </div>
-            <div id="thrust3" class="thrust-box">
-                <h3>Thrust 3 - Design for information-resource sharing</h3>
-                <p>Understand how social network structures affect information-resource sharing, as well as 
-                    formulate strategies that will lead to efficient information-resource sharing.</p>
-                <p>Answer questions: How to disseminate information efficiently during a disaster?</p>
-            </div>
-            <div id="thrust4" class="thrust-box">
-                <h3>Thrust 4 - Dynamic "Map your neighborhood" </h3>
-                <p>Integrate the results of Thrusts 1-3 and use them to co-design and pilot-test applications with two communities.</p>
-                <p>Answer questions: How does the proposed dynamic map-your-neighborhood program better support robust 
-                    communication and efficient information-resource sharing during a disaster?</p>
-            </div>
-        </div>
-    </section>
-
-<!-- History Section -->
-<section id="history">
-    <h2>History</h2>
-    <p>This section provides a detailed timeline of significant events and milestones in the development of our community resilience projects.</p>
-    <div class="timeline">
-        <div class="timeline-event">
-            <div class="event-time">2016</div>
-            <div class="arrow"></div>
-            <div class="event-box">In 2016, Cynthia Chen and Dan Abramson began to develop a collaborative interest in researching 
-                social-technical systems resilience at the community scale as it might become expressed in a major disruption to communications and transportation. 
-                Cynthia had been working on disaster resilience by both developing novel resilience indices with big data and modeling the failure propagation process 
-                on interdependent infrastructure systems. Dan had been working both internationally and locally for ten years on earthquake and tsunami recovery 
-                and hazards mitigation planning. The two felt that a community-based focus was important. They undertook to co-advise an incoming PhD student in 
-                Urban Design and Planning, Katherine Idziorek, to work on this topic with them. With degrees in both architectural and urban design and planning, 
-                and 8 years of professional practice in community engagement for urban design and transportation projects, Katie was well-qualified to contribute to this work.</div>
-        </div>
-        <div class="timeline-event">
-            <div class="event-time">April 2017</div>
-            <div class="arrow"></div>
-            <div class="event-box">April 2017, John Temple and Roger Roffman (both of Laurelhurst residents and Roger is a UW emeritus professor) 
-                approached Cynthia, with a proposal of having a student from UW to conduct a community-based earthquake preparedness project in Laurelhurst. 
-                Cynthia approached Dan and Katie about the idea, and they met with John to discuss how their research and professional experience might serve the Laurelhurst effort.</div>
-        </div>
-        <div class="timeline-event">
-            <div class="event-time">June 2017</div>
-            <div class="arrow"></div>
-            <div class="event-box">June 2017, UW team (Katie and Cynthia) met with Laurelhurst LEAP leadership including John Temple and Roger Roffman.</div>
-        </div>
-        <div class="timeline-event">
-            <div class="event-time">Continue</div>
-            <div class="arrow"></div>
-            <div class="event-box">Many meetings and conversations with the community ... </div>
-        </div>
-        <div class="timeline-event">
-            <div class="event-time">2017</div>
-            <div class="arrow"></div>
-            <div class="event-box">2017 is also the first year for <a href="https://tomnet-utc.engineering.asu.edu/" target="_blank">TOMNET funding</a> and Cynthia put in a proposal for 
-                <a href="https://tomnet-utc.engineering.asu.edu/projects/uw-sociotechnical-systems-phase-i/" target="_blank">"Attitudes and Trust in Leveraging Integrated Sociotechnical Systems for Enhancing Community Adaptive Capacity Phase I"</a>. This is the first funded project for Katie's dissertation. TOMNET funding continued for Phase II, III, and IV in 2021, 
-                when Katie finished her dissertation. and supported her to conduct household surveys on attitudes towards local resource and information sharing given social relationships 
-                and disruptions to transportation. With TOMNET funding, 2017 is the first year that our focus on community-based peer-to-peer resource and information sharing started. </div>
-        </div>
-        <div class="timeline-event">
-            <div class="event-time">2017-2018</div>
-            <div class="arrow"></div>
-            <div class="event-box">During the 2017-2018 academic year, Dan, Cynthia and Katie also developed a proposal for Bullitt Foundation funding to work with both Laurelhurst and Westport, 
-                a small rural community on the Washington coast that had taken remarkable steps to prepare for a catastrophic tsunami, by rebuilding its elementary school as a tsunami vertical 
-                evacuation structure. The successful proposal supported the mounting of an applied practical planning studio course and community workshops to explore the need for and potential 
-                of new communications infrastructure to enhance resilience in the face of these hazards.</div>
-        </div>
-        <div class="timeline-event">
-            <div class="event-time">2021</div>
-            <div class="arrow"></div>
-            <div class="event-box">In 2021, following Katie's graduation, Cynthia and Dan received Global Innovation Fund support to explore international comparative study of this topic with 
-                partners in Japan. The GIF study built capacity for US-Japan collaboration on community-based resilience work. </div>
-        </div>
-        <div class="timeline-event">
-            <div class="event-time">2020-2022</div>
-            <div class="arrow"></div>
-            <div class="event-box">NSF-JST planning project came in led by Cynthia Chen between 2020 and 2022. Dan served as Co-PI with two new other Co-PIs, Payman Arahshahi and Sreeram Kannan of ECE UW. 
-                The project continued analysis of the community survey results, in combination with a comparative survey in Nagoya, Japan, and exploring further the requirements of 
-                physical communications infrastructure and software design for P2P resource and information sharing.</div>
-        </div>
-        <div class="timeline-event">
-            <div class="event-time">Continue</div>
-            <div class="arrow"></div>
-            <div class="event-box">NSF LEAP-HI funding on creating adaptable societies led by Cynthia Chen and Dan Abramson serves as a co-PI. The project focused on how to create adaptable systems that will work together. 
-                NSF-JST and NSF LEAP-HI funding and TOMNET funding also supported a new Urban Design and Planning student, Cristina Cano-Calhoun, for her MUP thesis to conduct qualitative interviews of 
-                partner community stakeholders for P2P sharing.</div>
-        </div>
-        <div class="timeline-event">
-            <div class="event-time">2023-2027</div>
-            <div class="arrow"></div>
-            <div class="event-box">2023 - 2027, current NSF SCC project led by Cynthia Chen. We brought in new Co-PIs: Kurtis, Shuai and Tyler. </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-container">
-        <div class="contact-info">
-            <p>For all inquiries please contact:</p>
-            <p>Prof. Cynthia Chen</p>
-            <p>Email: qzchen@uw.edu</p>
-        </div>
-        <div class="sponsor-logos">
-            <div class="left-logos">
-                <img src="images/THINK.png" alt="Sponsor 2" style="width: 100%; height: auto;">
-            </div>
-            <div class="middle-logo">
-                <img src="images/UW1.png" alt="Sponsor 3" style="width: 155%; height: auto;">
-            </div>
-            <div class="right-logo">
-                <img src="images/NSF.png" alt="Sponsor 1" style="width: 60%; height: auto;">
-            </div>
-        </div>
-    </div>
-</section>
-
-    <footer>
-        <p>&copy; 2025 NSF S&CC Research Project Team. All rights reserved.</p>
     </footer>
-    <script src="js/scripts.js"></script>
+    </div>
 </body>
+
 </html>
