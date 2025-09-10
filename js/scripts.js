@@ -94,51 +94,36 @@ document.addEventListener('mousedown', function () {
     document.body.classList.remove('keyboard-navigation');
 });
 
-// Mobile menu: build a collapsible menu from desktop nav and toggle with hamburger
+// Mobile menu: toggle the static mobile menu with hamburger button
 function initMobileMenu() {
+    console.log('initMobileMenu called');
     try {
-        const header = document.querySelector('header');
-        if (!header) return;
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        console.log('Menu button found:', menuButton);
+        console.log('Mobile menu found:', mobileMenu);
 
-        const desktopNav = header.querySelector('nav');
-        const menuButton = header.querySelector('button.md:hidden');
-
-        if (!desktopNav || !menuButton) return;
-
-        // Create mobile menu container just after header
-        const mobileMenu = document.createElement('div');
-        mobileMenu.className = 'md:hidden bg-[#e8f0ec] border-t border-gray-200 shadow-sm hidden';
-
-        const menuInner = document.createElement('div');
-        menuInner.className = 'container mx-auto px-4 sm:px-6 lg:px-8 py-2 flex flex-col';
-
-        const links = desktopNav.querySelectorAll('a');
-        links.forEach(function (link) {
-            const a = document.createElement('a');
-            a.href = link.getAttribute('href');
-            a.textContent = link.textContent;
-            // Style for mobile items
-            a.className = 'block px-2 py-3 text-base font-medium text-[#1c1c0d] hover:text-[#166534]';
-            menuInner.appendChild(a);
-        });
-
-        mobileMenu.appendChild(menuInner);
-
-        // Insert after header
-        if (header.parentNode) {
-            header.parentNode.insertBefore(mobileMenu, header.nextSibling);
+        if (!menuButton || !mobileMenu) {
+            console.log('Missing menu button or mobile menu');
+            return;
         }
 
         // Toggle handler
-        menuButton.setAttribute('aria-expanded', 'false');
-        menuButton.addEventListener('click', function () {
+        menuButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            console.log('Menu button clicked');
             const isHidden = mobileMenu.classList.contains('hidden');
+            console.log('Menu is hidden:', isHidden);
             if (isHidden) {
                 mobileMenu.classList.remove('hidden');
                 menuButton.setAttribute('aria-expanded', 'true');
+                console.log('Menu shown');
             } else {
                 mobileMenu.classList.add('hidden');
                 menuButton.setAttribute('aria-expanded', 'false');
+                console.log('Menu hidden');
             }
         });
 
@@ -148,9 +133,12 @@ function initMobileMenu() {
             if (target && target.tagName === 'A') {
                 mobileMenu.classList.add('hidden');
                 menuButton.setAttribute('aria-expanded', 'false');
+                console.log('Menu closed after link click');
             }
         });
+
+        console.log('Mobile menu initialized successfully');
     } catch (err) {
-        // fail silently in production
+        console.error('Error initializing mobile menu:', err);
     }
 }
