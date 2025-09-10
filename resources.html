@@ -108,24 +108,24 @@
                         <div class="flex justify-between items-center mb-6">
                             <h2 class="text-3xl font-bold text-gray-900">All Resources</h2>
                         </div>
-                        <div class="overflow-x-auto bg-white rounded-2xl shadow-sm">
+                        <!-- Desktop Table View -->
+                        <div class="hidden md:block overflow-x-auto bg-white rounded-2xl shadow-sm">
                             <table class="w-full text-left">
                                 <thead class="bg-gray-50 border-b border-gray-200">
                                     <tr>
-                                        <th class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider">
+                                        <th class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider w-3/5">
                                             Title</th>
-                                        <th class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider">
+                                        <th class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider w-2/15">
                                             Type</th>
-                                        <th class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider">
+                                        <th class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider w-2/15">
                                             Date</th>
-                                        <th
-                                            class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider text-right">
+                                        <th class="px-6 py-4 text-xs font-bold text-gray-500 uppercase tracking-wider text-right w-2/15">
                                             Action</th>
                                     </tr>
                                 </thead>
                                 <tbody class="divide-y divide-gray-200">
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap">
+                                        <td class="px-6 py-4">
                                             <div class="text-sm font-medium text-gray-900">Untapped capacity of
                                                 place-based peer-to-peer resource sharing for community resilience</div>
                                         </td>
@@ -142,7 +142,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap">
+                                        <td class="px-6 py-4">
                                             <div class="text-sm font-medium text-gray-900">On your own, together:
                                                 Regional perspectives on community resource-sharing for disaster
                                                 preparedness in Washington state</div>
@@ -161,7 +161,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap">
+                                        <td class="px-6 py-4">
                                             <div class="text-sm font-medium text-gray-900">Out of Harm's Way:
                                                 Prioritizing Community Assets in Westport, WA (Master Thesis in Urban
                                                 Planning)</div>
@@ -179,7 +179,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap">
+                                        <td class="px-6 py-4">
                                             <div class="text-sm font-medium text-gray-900">Infrastructuring at the
                                                 Margins: Studies in Community Networking (Dissertation)</div>
                                         </td>
@@ -196,7 +196,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap">
+                                        <td class="px-6 py-4">
                                             <div class="text-sm font-medium text-gray-900">Seattle Community Network
                                             </div>
                                         </td>
@@ -215,7 +215,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="px-6 py-4 whitespace-nowrap">
+                                        <td class="px-6 py-4">
                                             <div class="text-sm font-medium text-gray-900">Laurelhurst Emergency Action
                                                 Plan (LEAP)
                                             </div>
@@ -236,6 +236,81 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+
+                        <!-- Mobile Card View -->
+                        <div class="md:hidden space-y-4">
+                            <div class="bg-white rounded-2xl shadow-sm p-6">
+                                <div class="flex justify-between items-start mb-3">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Article</span>
+                                    <span class="text-sm text-gray-500">2025</span>
+                                </div>
+                                <h3 class="text-sm font-medium text-gray-900 mb-3">Untapped capacity of place-based peer-to-peer resource sharing for community resilience</h3>
+                                <a class="text-yellow-600 hover:text-yellow-900 font-semibold text-sm flex items-center gap-1"
+                                    href="https://www.nature.com/articles/s44284-024-00175-w">
+                                    View <span class="material-symbols-outlined text-base">visibility</span>
+                                </a>
+                            </div>
+
+                            <div class="bg-white rounded-2xl shadow-sm p-6">
+                                <div class="flex justify-between items-start mb-3">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">Article</span>
+                                    <span class="text-sm text-gray-500">2025</span>
+                                </div>
+                                <h3 class="text-sm font-medium text-gray-900 mb-3">On your own, together: Regional perspectives on community resource-sharing for disaster preparedness in Washington state</h3>
+                                <a class="text-yellow-600 hover:text-yellow-900 font-semibold text-sm flex items-center gap-1"
+                                    href="https://www.tandfonline.com/doi/full/10.1080/07352166.2024.2326491" target="_blank">
+                                    View <span class="material-symbols-outlined text-base">visibility</span>
+                                </a>
+                            </div>
+
+                            <div class="bg-white rounded-2xl shadow-sm p-6">
+                                <div class="flex justify-between items-start mb-3">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">Publication</span>
+                                    <span class="text-sm text-gray-500">2025</span>
+                                </div>
+                                <h3 class="text-sm font-medium text-gray-900 mb-3">Out of Harm's Way: Prioritizing Community Assets in Westport, WA (Master Thesis in Urban Planning)</h3>
+                                <a class="text-yellow-600 hover:text-yellow-900 font-semibold text-sm flex items-center gap-1"
+                                    href="#">
+                                    View <span class="material-symbols-outlined text-base">visibility</span>
+                                </a>
+                            </div>
+
+                            <div class="bg-white rounded-2xl shadow-sm p-6">
+                                <div class="flex justify-between items-start mb-3">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-100 text-blue-800">Publication</span>
+                                    <span class="text-sm text-gray-500">2024</span>
+                                </div>
+                                <h3 class="text-sm font-medium text-gray-900 mb-3">Infrastructuring at the Margins: Studies in Community Networking (Dissertation)</h3>
+                                <a class="text-yellow-600 hover:text-yellow-900 font-semibold text-sm flex items-center gap-1"
+                                    href="https://www.proquest.com/docview/3082058851" target="_blank">
+                                    View <span class="material-symbols-outlined text-base">visibility</span>
+                                </a>
+                            </div>
+
+                            <div class="bg-white rounded-2xl shadow-sm p-6">
+                                <div class="flex justify-between items-start mb-3">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">External Link</span>
+                                    <span class="text-sm text-gray-500"></span>
+                                </div>
+                                <h3 class="text-sm font-medium text-gray-900 mb-3">Seattle Community Network</h3>
+                                <a class="text-yellow-600 hover:text-yellow-900 font-semibold text-sm flex items-center gap-1"
+                                    href="https://seattlecommunitynetwork.org/" target="_blank">
+                                    Visit <span class="material-symbols-outlined text-base">open_in_new</span>
+                                </a>
+                            </div>
+
+                            <div class="bg-white rounded-2xl shadow-sm p-6">
+                                <div class="flex justify-between items-start mb-3">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-purple-100 text-purple-800">External Link</span>
+                                    <span class="text-sm text-gray-500"></span>
+                                </div>
+                                <h3 class="text-sm font-medium text-gray-900 mb-3">Laurelhurst Emergency Action Plan (LEAP)</h3>
+                                <a class="text-yellow-600 hover:text-yellow-900 font-semibold text-sm flex items-center gap-1"
+                                    href="https://laurelhurstcc.com/projects/leap/" target="_blank">
+                                    Visit <span class="material-symbols-outlined text-base">open_in_new</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
